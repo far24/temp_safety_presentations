@@ -5,5 +5,7 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About Me"
-      href: about.html
+    - text: "EDA: Truck"
+      href: ./nov_3/03-exploratory_analysis_truck.html
+    - text: "Model: Truck"
+      href: ./nov_3/model_1_truck.html
