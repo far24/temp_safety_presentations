@@ -1,11 +1,11 @@
-name: "personal-website"
+name: "safety"
 output_dir: "."
 navbar:
-  title: "Personal Website"
+  title: "&#128655 &#128663 &#128665 &#128666 &#128654"
   left:
     - text: "Home"
       href: index.html
-    - text: "Notes on Literature"
-      href: 
+    - text: "NotesOnLit"
+      href: lit.html
     - text: ?Questions?
       href: 
