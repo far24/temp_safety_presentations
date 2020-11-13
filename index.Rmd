@@ -2,8 +2,37 @@
 title: "Safety Research"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
 ```{r}
 library(here)
 ```
 
-[Truck involved crash exploratory analysis](03-exploratory_analysis.html)
+</br>
+</br>
+
+
+Table of Contents:
+==================
+</br>
+</br>
+
+## Analysis By Type:
+| ID         	| Year 	| Month 	| Topics                                  	                  | Software 	      | Presentation links                                                                 	|
+|------------	|------	|-------	|-----------------------------------------------------------	|---------------	|------------------------------------------------------------------------------------	|
+| CRSH-UNIV 	| 2020 	| NOV   	| Univariate Analysis of crash injury severity and variables 	| R   	      | |
+
+
+</br>
+</br>
+
+## Weekly Meeting Updates:
+
+| ID         	| Year 	| Month 	| Topics                                  	| Software 	| Presentation links                                                                 	|
+|------------	|------	|-------	|-----------------------------------------	|----------	|------------------------------------------------------------------------------------	|
+| 2020-11-01 	| 2020 	| NOV   	| Primary analysis of Binary Logit Models 	| NLOGIT   	| [Click Here](./year_2020/month/nov/wk45_nov_3/03-exploratory_analysis_truck.html) 	|
+| 2020-11-02 	| 2020 	| NOV   	| Truck vs. non-truck Binary Logit Models 	| R        	| [Click Here](./year_2020/month/nov/wk46_nov_13/wk_46-updated_logit_models.html)    	|
+| 2020-11-03 	| 2020 	| NOV   	|                                         	|          	|                                                                                    	|
+| 2020-11-04 	| 2020 	| NOV   	|                                         	|          	|                                                                                    	|
