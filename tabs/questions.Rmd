@@ -1,0 +1,17 @@
+---
+title: "Questions"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+library(here)
+```
+
+
+
+|Meeting Date | Question                                                        |Answer                                                             |Status                |
+|-------------|-----------------------------------------------------------------|------------------------------------------------------------------	|----------------------|
+| Nov 20, 2020| Is class balance neccessary for parametric model? 	            | No	                                                              | Asked and got answer |

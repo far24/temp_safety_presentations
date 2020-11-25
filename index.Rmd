@@ -25,6 +25,8 @@ Table of Contents:
 | CRSH-UNIV 	| 2020 	| NOV   	| Univariate Analysis of crash injury severity and variables 	| R   	      | |
 
 
+
+
 </br>
 </br>
 
@@ -36,3 +38,30 @@ Table of Contents:
 | 2020-11-02 	| 2020 	| NOV   	| Truck vs. non-truck Binary Logit Models 	| R        	| [Click Here](./year_2020/month/nov/wk46_nov_13/wk_46-updated_logit_models_2.html)   |
 | 2020-11-03 	| 2020 	| NOV   	|                                         	|          	|                                                                                    	|
 | 2020-11-04 	| 2020 	| NOV   	|                                         	|          	|                                                                                    	|
+
+
+
+```{r}
+library(DiagrammeR)
+
+mermaid('
+   graph LR
+
+   DT[Datasets] --- T[Truck]
+   DT[Datasets] --- NT
+   T[Truck] --- T-BLM[Truck Binary Logit]
+   T-BLM[Truck Binary Logit] --- T-ALL-YR[Truck All years]
+   T-BLM[Truck Binary Logit] --- T-BY-YR[Truck]
+   T[Truck] --- T-RPBLM[Truck Random Param Binary Logit]
+   T-RPBLM[Truck Random Param Binary Logit] --- T-RAN-ALL-YR[Truck Random Param  All years]
+   T-RPBLM[Truck Random Param Binary Logit] --- T-RAN-BY-YR[Truck Random Param By year ]\
+   NT[NTruck] --- NT-BLM[NTruck Binary Logit]
+   NT-BLM[NTruck Binary Logit] --- NT-ALL-YR[NTruck All years]
+   NT-BLM[NTruck Binary Logit] --- NT-BY-YR[NTruck]
+   NT[NTruck] --- NT-RPBLM[NTruck Random Param Binary Logit]
+   NT-RPBLM[NTruck Random Param Binary Logit] --- NT-RAN-ALL-YR[NTruck Random Param  All years]
+   NT-RPBLM[NTruck Random Param Binary Logit] --- NT-RAN-BY-YR[NTruck Random Param By year ]
+
+   ', height = 800)
+
+```

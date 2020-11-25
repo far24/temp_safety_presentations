@@ -7,5 +7,5 @@ navbar:
       href: index.html
     - text: "NotesOnLit"
       href: lit.html
-    - text: ?Questions?
-      href: 
+    - text: "Questions"
+      href: ./tabs/questions.html

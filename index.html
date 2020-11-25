@@ -13,7 +13,7 @@
 
 <title>Safety Research</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -23,6 +23,25 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<script src="site_libs/d3-3.3.8/d3.min.js"></script>
+<script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="site_libs/chromatography-0.1/chromatography.js"></script>
+<script src="site_libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -278,7 +297,9 @@ $(document).ready(function () {
 <li>
   <a href="lit.html">NotesOnLit</a>
 </li>
-<li class="dropdown-header">?Questions?</li>
+<li>
+  <a href="./tabs/questions.html">Questions</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -382,6 +403,8 @@ $(document).ready(function () {
 </tr>
 </tbody>
 </table>
+<div id="htmlwidget-06be92b3565f894c71a8" style="width:672px;height:800px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-06be92b3565f894c71a8">{"x":{"diagram":"\n   graph LR\n\n   DT[Datasets] --- T[Truck]\n   DT[Datasets] --- NT\n   T[Truck] --- T-BLM[Truck Binary Logit]\n   T-BLM[Truck Binary Logit] --- T-ALL-YR[Truck All years]\n   T-BLM[Truck Binary Logit] --- T-BY-YR[Truck]\n   T[Truck] --- T-RPBLM[Truck Random Param Binary Logit]\n   T-RPBLM[Truck Random Param Binary Logit] --- T-RAN-ALL-YR[Truck Random Param  All years]\n   T-RPBLM[Truck Random Param Binary Logit] --- T-RAN-BY-YR[Truck Random Param By year ]\n   NT[NTruck] --- NT-BLM[NTruck Binary Logit]\n   NT-BLM[NTruck Binary Logit] --- NT-ALL-YR[NTruck All years]\n   NT-BLM[NTruck Binary Logit] --- NT-BY-YR[NTruck]\n   NT[NTruck] --- NT-RPBLM[NTruck Random Param Binary Logit]\n   NT-RPBLM[NTruck Random Param Binary Logit] --- NT-RAN-ALL-YR[NTruck Random Param  All years]\n   NT-RPBLM[NTruck Random Param Binary Logit] --- NT-RAN-BY-YR[NTruck Random Param By year ]\n\n   "},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -394,7 +417,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
